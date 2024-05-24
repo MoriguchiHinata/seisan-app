@@ -38,6 +38,7 @@ const Date = styled.div`
 
 const Flow = styled.div`
   font-size: 10px;
+  color: ${COLOR.GRAY};
 `;
 
 const Num = styled.div`
