@@ -5,19 +5,29 @@ import COLOR from "../../var/color";
 export const Receipt = ({ name, date, paidby, num, target }) => {
   return (
     <Container>
-      <Info>
-        <Name>{name}</Name>
-        <Date>{date}</Date>
-        <Flow>
-          {paidby} → {target}
-        </Flow>
-      </Info>
-      <Num>{num}</Num>
+      <Wrapper>
+        <Info>
+          <Name>{name}</Name>
+          <Date>{date}</Date>
+          <Flow>
+            {paidby} → {target.map((name, _) => name + " ")}
+          </Flow>
+        </Info>
+        <Num>{num}</Num>
+      </Wrapper>
     </Container>
   );
 };
 
 const Container = styled.div`
+  & :hover {
+    background-color: ${COLOR.BACKGROUND_BLUE};
+    transition: 0.1s;
+  }
+`;
+
+const Wrapper = styled.div`
+  padding: 2px 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,19 +36,17 @@ const Container = styled.div`
 const Info = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0;
 `;
 
 const Name = styled.div``;
 
 const Date = styled.div`
   font-size: 8px;
-  color: ${COLOR.GRAY};
 `;
 
 const Flow = styled.div`
   font-size: 10px;
-  color: ${COLOR.GRAY};
 `;
 
 const Num = styled.div`
