@@ -3,7 +3,7 @@ import styled from "styled-components";
 import plusImg from "../../icon/Plus.svg";
 import COLOR from "../../var/color";
 
-export const CreateNew = () => {
+export const CreateNewProject = () => {
   return (
     <Button>
       <img src={plusImg} alt="plus" />
@@ -36,4 +36,4 @@ const Text = styled.div`
   font-size: 16px;
 `;
 
-export default CreateNew;
+export default CreateNewProject;

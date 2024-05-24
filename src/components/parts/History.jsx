@@ -1,10 +1,10 @@
 import React from "react";
 import historyImg from "../../icon/History.svg";
-import HistoryCard from "./HistoryCard";
+import ProjectCard from "./ProjectCard";
 import styled from "styled-components";
 import COLOR from "../../var/color";
 
-export const History = () => {
+export const History = ({ projectList }) => {
   return (
     <Container>
       <HistoryHeading>
@@ -18,7 +18,13 @@ export const History = () => {
         </HistoryTitle>
         <Line />
         <List>
-          <HistoryCard name={"熱海旅行"} timestamp={"2024/5/28 17:23"} />
+          {projectList.map((project, _) => (
+            <ProjectCard
+              name={project.name}
+              timestamp={project.date}
+              id={project.id}
+            />
+          ))}
         </List>
       </HistoryTable>
     </Container>
