@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/seisan-app/static/css/main.aad70521.css",
-    "main.js": "/seisan-app/static/js/main.ce4e59cf.js",
+    "main.js": "/seisan-app/static/js/main.db70664f.js",
     "index.html": "/seisan-app/index.html",
     "static/media/History.svg": "/seisan-app/static/media/History.73a45863af2fcf728b1baefc655202ca.svg",
     "static/media/Plus.svg": "/seisan-app/static/media/Plus.73f0295e8eb89c4f99d19e3616af714d.svg",
+    "static/media/Close.svg": "/seisan-app/static/media/Close.c9b955fbcb2aeaf33a79e378abc94aa0.svg",
     "main.aad70521.css.map": "/seisan-app/static/css/main.aad70521.css.map",
-    "main.ce4e59cf.js.map": "/seisan-app/static/js/main.ce4e59cf.js.map"
+    "main.db70664f.js.map": "/seisan-app/static/js/main.db70664f.js.map"
   },
   "entrypoints": [
     "static/css/main.aad70521.css",
-    "static/js/main.ce4e59cf.js"
+    "static/js/main.db70664f.js"
   ]
 }
