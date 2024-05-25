@@ -6,7 +6,7 @@ import COLOR from "../../var/color";
 export const Navi = () => {
   return (
     <Container>
-      <Link to="/">Top</Link>＞
+      <Link to="/">Home</Link>＞
     </Container>
   );
 };

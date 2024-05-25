@@ -6,7 +6,7 @@ import Receipt from "./parts/Receipt";
 import styled from "styled-components";
 import COLOR from "../var/color";
 
-export const Project = ({ projectId }) => {
+export const Project = ({ projectName, date, projectId }) => {
   const [receiptList, setReceiptList] = useState([]);
 
   const RECEIPTLIST_STORAGE_KEY = "" + projectId;
@@ -15,15 +15,8 @@ export const Project = ({ projectId }) => {
       name: "海鮮丼",
       date: "5/28 18:21",
       paidby: "森口",
-      num: 10000,
+      num: 100000,
       target: ["矢野", "斉藤", "相馬"],
-    },
-    {
-      name: "駐車場",
-      date: "5/28 19:30",
-      paidby: "矢野",
-      num: 560,
-      target: ["斉藤", "相馬", "森口"],
     },
   ];
 
@@ -41,8 +34,8 @@ export const Project = ({ projectId }) => {
       <Header />
       <Breadcrumb />
       <Contents>
-        <ProjectName>熱海旅行</ProjectName>
-        <Date>2023/5/28 - 30</Date>
+        <ProjectName>{projectName}</ProjectName>
+        <Date>{date}</Date>
         <CreateNewReceipt />
         <List>
           {receiptList.map((receipt, _) => (
