@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Header from "./parts/Header";
 import Breadcrumb from "./parts/Breadcrumb";
 import styled from "styled-components";
+import CreateNewProject from "./parts/CreateNewProject";
 import CreateNewProjectButton from "./parts/CreateNewProjectButton";
 import History from "./parts/History";
-import CreateNewProject from "./parts/CreateNewProject";
 import COLOR from "../var/color";
 
 const Home = ({ projectList, addProjectList }) => {
