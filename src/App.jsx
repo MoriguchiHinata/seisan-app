@@ -44,6 +44,7 @@ export const App = () => {
               <Project
                 projectName={project.projectName}
                 date={project.date}
+                memberList={project.memberList}
                 projectId={project.id}
               />
             }
