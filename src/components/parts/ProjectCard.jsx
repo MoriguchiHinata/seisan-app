@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import COLOR from "../../var/color";
 
-export const HistoryCard = ({ name, timestamp, id }) => {
+export const ProjectCard = ({ name, date, id }) => {
   return (
     <Container>
       <Card to={"/project/" + id}>
         <Name>{name}</Name>
-        <TimeStamp>{timestamp}</TimeStamp>
+        <TimeStamp>{date}</TimeStamp>
       </Card>
     </Container>
   );
@@ -35,4 +35,4 @@ const Name = styled.div``;
 
 const TimeStamp = styled.div``;
 
-export default HistoryCard;
+export default ProjectCard;

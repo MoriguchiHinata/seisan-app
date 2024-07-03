@@ -14,14 +14,14 @@ export const History = ({ projectList }) => {
       <HistoryTable>
         <HistoryTitle>
           <Text>旅行名</Text>
-          <Text>最終更新日</Text>
+          <Text>期間</Text>
         </HistoryTitle>
         <Line />
         <List>
           {projectList.map((project, _) => (
             <ProjectCard
-              name={project.name}
-              timestamp={project.date}
+              name={project.projectName}
+              date={project.date}
               id={project.id}
             />
           ))}
